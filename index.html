@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Bootstrap-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <!-- JSS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-text">
+            Crystal Collector!
+            Wins:
+            Losses:
+        </span>
+    </nav>
+
+    <!-- Game -->
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        How to play!
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    There will be four crystals displayed as buttons on the page.
+                    The player will be shown a random number at the start of the game.
+
+                    When the player clicks on a crystal, it will add a specific amount of points to the player's total
+                    score.
+
+
+                    Your game will hide this amount until the player clicks a crystal.
+                    When they do click one, update the player's score counter.
+
+
+                    The player wins if their total score matches the random number from the beginning of the game.
+                    The player loses if their score goes above the random number.
+
+                    The game restarts whenever the player wins or loses.
+
+
+                    When the game begins again, the player should see a new random number. Also, all the crystals will
+                    have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+
+
+                    The app should show the number of games the player wins and loses. To that end, do not refresh the
+                    page as a means to restart the game.
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Instructions -->
+        <!-- <div class="container"> -->
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="display-4">Crystal Collector</h1>
+                    </div>
+                    <div class="row">
+                        <div class="lead">Score to guess: </div>
+                    </div>
+                        <div class="row">
+                        <div class="lead">Your local score is: </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card" style="width: 18rem;">
+                                <a href="#"><img src="assets/images/crystal1.png" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="card" style="width: 18rem;">
+                                <a href="#"><img src="assets/images/crystal2.png" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="card" style="width: 18rem;">
+                                <a href="#"><img src="assets/images/crystal3.jpeg" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-3">
+                            <div class="card" style="width: 18rem;">
+                                <a href="#"><img src="assets/images/crystal4.jpg" class="card-img-top" alt="..."></a>
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+</body>
+</html>
