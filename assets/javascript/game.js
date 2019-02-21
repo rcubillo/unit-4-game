@@ -1,4 +1,4 @@
-//   Variables
+//Variables
   var score =0;
   score = parseInt(score);
 //Getting a random values
@@ -7,18 +7,21 @@
   var randomcrys2 = Math.floor(Math.random() * 12) + 1;
   var randomcrys3 = Math.floor(Math.random() * 12) + 1;
   var randomcrys4 = Math.floor(Math.random() * 12) + 1;
+  var randomcrys5 = getRndInteger(19, 120); 
+  
 
-  //showing the selected number to guess.
+     //showing the selected number to guess.
   $("#score").text(random);
   //showing the total score during the game.
   $("#total").text(score);
+  
 
   // Here we created an on-click event that responds to button clicks of the crystal image.
    $(".crystal-one").on("click", function() {
      // Clicking the button triggers an alert message.
     score += (randomcrys1);
     $("#total").text(score);
-    console.log(randomcrys1);
+    console.log(randomcrys1); 
  });
  
    // Here we created an on-click event that responds to button clicks of the crystal image.
@@ -56,9 +59,19 @@ $(".card").on("click", function() {
   //condition ? exprT : exprF 
   console.log('random: ', random);
   console.log('score: ', score);
-  score === random ? alert("You win!") : score >= random ? alert("You lose!!") : console.log('score less than random');
-
+  //score === random ? alert("You win!") : score >= random ? alert("You lose!!") : console.log('score less than random');
+  if (score >= random){
+    $("#score").text(randomcrys5);
+     alert("You lose!!");
+    score=0;
+  }
+  else if (score === random){
+    $("#score").text(randomcrys5);
+   alert("You win!");
+    score=0;
+  }
+  else {
+    console.log("test");
+  }
 });
 
-function reset (){
-};
