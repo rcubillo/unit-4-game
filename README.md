@@ -1,5 +1,7 @@
 # Crystall Collector
 
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+
 ### Contributors
     •rcubillo
 
