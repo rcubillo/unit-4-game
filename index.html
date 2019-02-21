@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,40 +9,43 @@
 
     <!--Bootstrap-->
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- JSS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 
 </head>
 
 <body>
-    <!-- Navbar
+
     <nav class="navbar navbar-light bg-light">
         <span class="navbar-text">
-            Crystal Collector!
-            Wins:
-            Losses:
+            <h1> Crystal Collector!</h1>
+            <h5>Wins: <span id="wins"></span></h5>
+            <h5>Losses: <span id="losses"></span></h5>
         </span>
-    </nav> -->
+    </nav>
 
     <!-- Game -->
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class ="col-12-md">
                     <h1> Crystal Collector</h1>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -60,72 +64,84 @@
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                     <ul>
-                    <li>There will be four crystals displayed as buttons on the page.</li>
-                    <li>The player will be shown a random number at the start of the game.</li>
-                    <li> When the player clicks on a crystal, it will add a specific amount of points to the player's total
-                    score.</li>
-                     <li>Your game will hide this amount until the player clicks a crystal.
-                    When they do click one, update the player's score counter.</li>
-                    <li>The player wins if their total score matches the random number from the beginning of the game.
-                    The player loses if their score goes above the random number.</li>
-                    <li>The game restarts whenever the player wins or loses.</li>
-                    <li>When the game begins again, the player should see a new random number. Also, all the crystals will
-                    have four new hidden values. Of course, the user's score (and score counter) will reset to zero.</li>
-                    <li> The app should show the number of games the player wins and loses. To that end, do not refresh the
-                    page as a means to restart the game.</li>
-                </ul>                   
+                        <li>There will be four crystals displayed as buttons on the page.</li>
+                        <li>The player will be shown a random number at the start of the game.</li>
+                        <li> When the player clicks on a crystal, it will add a specific amount of points to the
+                            player's total
+                            score.</li>
+                        <li>Your game will hide this amount until the player clicks a crystal.
+                            When they do click one, update the player's score counter.</li>
+                        <li>The player wins if their total score matches the random number from the beginning of the
+                            game.
+                            The player loses if their score goes above the random number.</li>
+                        <li>The game restarts whenever the player wins or loses.</li>
+                        <li>When the game begins again, the player should see a new random number. Also, all the
+                            crystals will
+                            have four new hidden values. Of course, the user's score (and score counter) will reset to
+                            zero.</li>
+                        <li> The app should show the number of games the player wins and loses. To that end, do not
+                            refresh the
+                            page as a means to restart the game.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
-        <!-- Instructions -->
-        <!-- <div class="container"> -->
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="lead">Score to guess: <p id="score"> </p> </div>
-                    </div>
-                        <div class="row">
-                        <div class="lead">Your tocal score is: <p id="total"> </p> </div>
+    <!-- Instructions -->
+    <!-- <div class="container"> -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="lead">Score to guess: <p id="score"> </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lead">Your tocal score is: <p id="total"> </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 1 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <a href="#" class="crystal-one"><img src="assets/images/5.png" class="card-img-top"
+                                alt="..."></a>
                     </div>
                 </div>
 
-                <!-- Image 1 -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="card" style="width: 18rem;">
-                                <a href="#" class= "crystal-one"><img src="assets/images/5.png" class="card-img-top" alt="..."></a>
-                            </div>
-                        </div>
+                <!-- Image 2 -->
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <a href="#" class="crystal-two"><img src="assets/images/6.png" class="card-img-top"
+                                alt="..."></a>
+                    </div>
+                </div>
 
-                        <!-- Image 2 -->
-                        <div class="col-sm-3">
-                            <div class="card" style="width: 18rem;">
-                                <a href="#" class= "crystal-two"><img src="assets/images/6.png" class="card-img-top" alt="..."></a>
-                            </div>
-                        </div>
+                <!-- Image 3 -->
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <a href="#" class="crystal-three"><img src="assets/images/3.png" class="card-img-top"
+                                alt="..."></a>
+                    </div>
+                </div>
 
-                        <!-- Image 3 -->
-                        <div class="col-sm-3">
-                            <div class="card" style="width: 18rem;">
-                                <a href="#" class= "crystal-three"><img src="assets/images/3.png" class="card-img-top" alt="..."></a>   
-                            </div>
-                        </div>
-
-                        <!-- Image 4 -->
-                        <div class="col-sm-3">
-                            <div class="card" style="width: 18rem;">
-                                <a href="#" class= "crystal-four"><img src="assets/images/4.png" class="card-img-top" alt="..."></a>
-                            </div>
-                        </div>
+                <!-- Image 4 -->
+                <div class="col-sm-3">
+                    <div class="card" style="width: 18rem;">
+                        <a href="#" class="crystal-four"><img src="assets/images/4.png" class="card-img-top"
+                                alt="..."></a>
                     </div>
                 </div>
             </div>
-            <!-- <div id="crystals"> -->
+        </div>
+    </div>
+    <!-- <div id="crystals"> -->
 
-            <script type= "text/javascript" src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
+
 </html>
