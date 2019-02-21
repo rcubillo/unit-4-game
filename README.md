@@ -4,12 +4,12 @@
 rcubillo
 
 ### Technology
-	 *JavaScript *jQuery *Bootstrap *HTML5
+	• JavaScript, jQuery, Bootstrap, HTML5
 	• Live demo: https://youtu.be/yNI0l2FMeCk
   
 ### About
 	• This is an interactive game for web browsers.This app will dynamically update my HTML page with the jQuery library.
-  • The player will have to guess the answer. In this game, the player will have to guess numbers.
+        • The player will have to guess the answer. In this game, the player will have to guess numbers.
   
 ### Instructions 
   
