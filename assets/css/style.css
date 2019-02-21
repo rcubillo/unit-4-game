@@ -1,12 +1,20 @@
-.card-img-top {
-    height: 300px;
-
-}   
-.card{
-    margin:2px;
-    border: 2px solid black;
+body {
+    font-family: 'Indie Flower', cursive;
 }
 
-/* .jumbotron-fluid {
-margin-top:50px;
-} */
+.card-img-top {
+    height: 200px;
+}   
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.lead {
+padding: 0px 0px 0px 20px;
+}
+
+#pictures{
+    margin-top: 20px;
+}

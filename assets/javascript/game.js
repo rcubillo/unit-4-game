@@ -33,8 +33,9 @@ $(document).ready(function () {
     function getRndInteger(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     }
+     // DOM manipulation
     $('#number-to-guess').text(targetNumber);
-
+  //Getting random number
     randomcrys1 = Math.floor(Math.random() * 12) + 1;
     randomcrys2 = Math.floor(Math.random() * 12) + 1;
     randomcrys3 = Math.floor(Math.random() * 12) + 1;
@@ -59,8 +60,8 @@ $(document).ready(function () {
     restart();
   }
   $(".crystal-one").on("click", function () {
-    // Clicking the button triggers an alert message.
     counter = counter + (randomcrys1);
+    alert("The new score is: " + counter) ;
     $("#counter").text(counter);
     console.log(randomcrys1);
     //counter == targetNumber ? winning() : counter > targetNumber ? lossing() : console.log('score less than random');
@@ -74,8 +75,8 @@ $(document).ready(function () {
 
   // Here we created an on-click event that responds to button clicks of the crystal image.
   $(".crystal-two").on("click", function () {
-    // Clicking the button triggers an alert message.
-    counter += (randomcrys2);
+    counter = counter + (randomcrys2);
+    alert("The new score is: " + counter);
     $("#counter").text(counter);
     console.log(randomcrys2);
     //counter == targetNumber ? winning() : counter > targetNumber ? lossing() : console.log('score less than random');
@@ -89,8 +90,8 @@ $(document).ready(function () {
 
   // Here we created an on-click event that responds to button clicks of the crystal image.
   $(".crystal-three").on("click", function () {
-    // Clicking the button triggers an alert message.
-    counter += (randomcrys3);
+    counter = counter + (randomcrys3);
+    alert("The new score is: " + counter);
     $("#counter").text(counter);
     console.log(randomcrys3);
     //counter == targetNumber ? winning() : counter > targetNumber ? lossing() : console.log('score less than random');
@@ -104,8 +105,8 @@ $(document).ready(function () {
 
   // Here we created an on-click event that responds to button clicks of the crystal image.
   $(".crystal-four").on("click", function () {
-    // Clicking the button triggers an alert message.
-    counter += (randomcrys4);
+    counter = counter + (randomcrys4);
+    alert("The new score is: " + counter);
     $("#counter").text(counter);
     console.log(randomcrys4);
     //counter == targetNumber ? winning() : counter >  targetNumber ? lossing() : console.log('score less than random');
