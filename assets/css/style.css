@@ -1,8 +1,10 @@
 .card-img-top {
     height: 300px;
-}
+
+}   
 .card{
     margin:2px;
+    border: 2px solid black;
 }
 
 /* .jumbotron-fluid {

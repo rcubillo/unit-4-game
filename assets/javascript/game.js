@@ -57,9 +57,8 @@ $(".card").on("click", function() {
   console.log('random: ', random);
   console.log('score: ', score);
   score === random ? alert("You win!") : score >= random ? alert("You lose!!") : console.log('score less than random');
-  
+
 });
 
 function reset (){
-
 };
