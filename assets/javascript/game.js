@@ -20,7 +20,8 @@ $(document).ready(function () {
 
   // DOM manipulation
   $("#number-to-guess").text(targetNumber);
-  //Getting random number
+
+  //Getting random numbers between 1 and 12.
   var randomcrys1 = Math.floor(Math.random() * 12) + 1;
   var randomcrys2 = Math.floor(Math.random() * 12) + 1;
   var randomcrys3 = Math.floor(Math.random() * 12) + 1;
@@ -33,6 +34,7 @@ $(document).ready(function () {
     function getRndInteger(min, max) {
       return Math.floor(Math.random() * (max - min)) + min;
     }
+
      // DOM manipulation
     $('#number-to-guess').text(targetNumber);
   //Getting random number
@@ -59,11 +61,12 @@ $(document).ready(function () {
     $("#losses").text(losses);
     restart();
   }
+  //On-click event
   $(".crystal-one").on("click", function () {
     counter = counter + (randomcrys1);
     alert("The new score is: " + counter) ;
     $("#counter").text(counter);
-    console.log(randomcrys1);
+    //console.log(randomcrys1);
     //counter == targetNumber ? winning() : counter > targetNumber ? lossing() : console.log('score less than random');
     if (counter == targetNumber) {
       winning();
@@ -78,7 +81,7 @@ $(document).ready(function () {
     counter = counter + (randomcrys2);
     alert("The new score is: " + counter);
     $("#counter").text(counter);
-    console.log(randomcrys2);
+    //console.log(randomcrys2);
     //counter == targetNumber ? winning() : counter > targetNumber ? lossing() : console.log('score less than random');
     if (counter == targetNumber) {
       winning();
@@ -93,7 +96,7 @@ $(document).ready(function () {
     counter = counter + (randomcrys3);
     alert("The new score is: " + counter);
     $("#counter").text(counter);
-    console.log(randomcrys3);
+    //console.log(randomcrys3);
     //counter == targetNumber ? winning() : counter > targetNumber ? lossing() : console.log('score less than random');
     if (counter == targetNumber) {
       winning();
@@ -108,7 +111,7 @@ $(document).ready(function () {
     counter = counter + (randomcrys4);
     alert("The new score is: " + counter);
     $("#counter").text(counter);
-    console.log(randomcrys4);
+    //console.log(randomcrys4);
     //counter == targetNumber ? winning() : counter >  targetNumber ? lossing() : console.log('score less than random');
     if (counter == targetNumber) {
       winning();

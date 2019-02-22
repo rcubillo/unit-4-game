@@ -28,18 +28,22 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
+    <!-- reset  -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
 </head>
 
 <body>
-
+    <!-- Main navbar -->
     <nav class="navbar navbar-light bg-light">
         <span class="navbar-text">
-            <h1 > Crystal Collector!</h1>
+            <h1> Crystal Collector!</h1>
             <h5>Wins: <span id="wins"></span></h5>
             <h5>Losses: <span id="losses"></span></h5>
         </span>
     </nav>
 
+    <!-- Instructions will be in this accordion -->
     <div class="accordion" id="accordionExample">
         <div class="card">
             <div class="card-header" id="headingOne">
@@ -50,6 +54,7 @@
                     </button>
                 </h2>
             </div>
+
             <!-- Instructions -->
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
@@ -83,12 +88,10 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-    
                 <div class="card" style="width: 18rem;">
                     <div class="lead">Score to guess: <p id="number-to-guess"> </p>
                     </div>
                 </div>
-
                 <div class="card" style="width: 18rem;">
                     <div class="lead">Your tocal score is: <p id="counter"> </p>
                     </div>
@@ -97,7 +100,7 @@
         </div>
 
         <!-- Image 1 -->
-        <div class="container" id= "pictures">
+        <div class="container" id="pictures">
             <div class="row">
                 <div class="col-sm-3">
                     <div class="card" style="width: 10rem;">
@@ -125,8 +128,7 @@
                 <!-- Image 4 -->
                 <div class="col-sm-3">
                     <div class="card" style="width: 10rem;">
-                        <a href="#" class="crystal-four"><img src="assets/images/4.png" class="card-img-top"
-                                alt="crystal4"></a>
+                        <a href="#" class="crystal-four"><img src="assets/images/4.png" class="card-img-top" alt="crystal4"></a>
                     </div>
                 </div>
             </div>
